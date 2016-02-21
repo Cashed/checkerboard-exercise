@@ -1,6 +1,6 @@
 // Your JS goes here
 
-var body = document.getElementsByTagName('body')[0];
+var body = document.getElementsByTagName("body")[0];
 
 for(var i = 0; i < 63; i++){
 
@@ -17,3 +17,13 @@ for(var i = 0; i < 63; i++){
                                   //formatting looks ugly =(
   body.appendChild(tile_random);
 }
+
+var gradient =  document.createElement("div");
+
+gradient.style.background = "linear-gradient(to right bottom, purple, rgba(0, 0, 255, .3))";
+gradient.style.position = "fixed";
+gradient.style.top = "0";
+gradient.style.bottom = "0";
+gradient.style.width = "100%";
+
+body.appendChild(gradient);
